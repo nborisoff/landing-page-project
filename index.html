@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
+        <div class="container header-content">
             <div class="header-title">
                 IC "REPAIR DESIGN PROJECT"
             </div>
-            <nav>
+            <nav class="mobile-hidden">
                 <ul class="header-nav">
                     <li class="header-nav__item"><a href="#">HOME</a></li>
                     <li class="header-nav__item"><a href="#">PROJECTS</a></li>
@@ -24,7 +24,7 @@
                 </ul>
             </nav>
             <a class="header-content__phone" href="tel:+79287683239">+7 (928) 768-32-39</a>
-            <button class="header-content__btn">REQUEST A CALL</button>
+            <button class="header-content__btn mobile-hidden">REQUEST A CALL</button>
         </div>
     </header>
 
@@ -48,7 +48,7 @@
 
         <section class="examples">
             <div class="container examples__container">
-                <nav>
+                <nav class="mobile-hidden">
                     <ul class="examples-nav">
                         <li class="examples-nav__item"><a href="#">ROSTOV-ON-DON, ADMIRAL</a></li>
                         <li class="examples-nav__item"><a href="#">SOCHI THIEVES</a></li>
@@ -63,6 +63,11 @@
                                 on the site. For 14 years on in the construction <br>
                                 market we have made happy more than 1000 families
                             </p>
+                            <div class="slider-mobile desktop-hidden">
+                                <img src="./img/example-mobile.jpg" alt="example">
+                                <img src="./icons/mobile-slider-left.svg" alt="slide-left">
+                                <img src="./icons/mobile-slider-right.svg" alt="slide-right">
+                            </div>
                             <div class="examples__details">
                                 <div class="examples__details-item">
                                     <h3>CITY:</h3>
@@ -81,7 +86,7 @@
                                     <p>Upon request</p>
                                 </div>
                             </div>
-                            <div class="examples__slider">
+                            <div class="examples__slider mobile-hidden">
                                 <img src="./icons/left-arrow.svg" alt="left-arrow">
                                 <span class="examples__slider-dot"></span>
                                 <span class="examples__slider-dot"></span>
@@ -89,7 +94,7 @@
                                 <img src="./icons/right-arrow.svg" alt="right-arrow">
                             </div>
                         </div>
-                        <div class="examples__img">
+                        <div class="examples__img mobile-hidden">
                             <img src="./img/example.jpg" alt="example">
                         </div>
                 </div>
@@ -111,9 +116,9 @@
                 </div>
                 <div class="online__description">
                     <p>
-                        At each facility, a camera is installed that broadcasts the progress of work on the <br>
-                        clock. At any time, you can go to our website and monitor the progress of work in <br>
-                        your apartment. You can watch the live broadcast from one of our facilities! <br>
+                        At each facility, a camera is installed that broadcasts the progress of work on the
+                        clock. At any time, you can go to our website and monitor the progress of work in
+                        your apartment. You can watch the live broadcast from one of our facilities!
                         Leave a request below and you will receive a link to the broadcast.
                     </p>
                 </div>
@@ -204,7 +209,7 @@
             </div>
         </section>
 
-        <section class="request">
+        <section class="request mobile-hidden">
             <div class="container request__container">
                 <div class="request__steps">
                     <div class="request__steps-item">
@@ -255,7 +260,47 @@
             </div>
         </section>
 
-        <section class="clients">
+        <section class="styles">
+            <div class="container styles__container mobile-hidden">
+                <div class="styles__list">
+                    <h2> WE REALIZE YOUR <br> WILDEST FANTASIES</h2>
+                    <ul>
+                        <li><a href="#">American classic</a></li>
+                        <li><a href="#">Empire</a></li>
+                        <li><a href="#">Classical</a></li>
+                        <li><a href="#">Loft</a></li>
+                        <li><a href="#">Minimalism</a></li>
+                        <li><a href="#">Provence</a></li>
+                        <li><a href="#">Romanticism</a></li>
+                        <li><a href="#">Scandinavian style</a></li>
+                        <li><a href="#">Mediterranean style</a></li>
+                        <li><a href="#">High tech</a></li>
+                        <li><a href="#">Eclecticism</a></li>
+                    </ul>
+                </div>
+                <div class="styles__parts">
+                    <div class="styles__parts-item">
+                        <img src="./img/part1.jpg" alt="part">
+                        <img src="./img/part2.jpg" alt="part">
+                    </div>
+                    <div class="styles__parts-item">
+                        <img src="./img/part3.jpg" alt="part"> 
+                        <img src="./img/part4.jpg" alt="part">
+                    </div>
+                </div>
+            </div>
+            <div class="container desktop-hidden">
+                <h2> WE REALIZE YOUR <br> WILDEST FANTASIES</h2>
+                <div class="slider-mobile">
+                    <img src="./img/style-mobile.jpg" alt="part">
+                    <img src="./icons/mobile-slider-left.svg" alt="slide-left">
+                    <img src="./icons/mobile-slider-right.svg" alt="slide-right">
+                </div>
+            </div>
+            <div class="styles-overlay mobile-hidden"></div>
+        </section>
+
+        <section class="clients mobile-hidden">
             <div class="container">
                 <div class="clients__title">
                     <h3>OUR CLIENTS</h3>
@@ -354,6 +399,9 @@
                         <button type="submit" form="question">SUBMIT</button>
                     </form>
                 </div>
+                <div class="contacts__map-mobile desktop-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.5565888182336!2d39.722680987396124!3d47.244818615993836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2sru!4v1628615481143!5m2!1sru!2sru" width="340" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
                 <div class="contacts__text">
                     <p>ROSTOV-ON-DON, NANSEN ST., 239 SHOPPING CENTER <br> DECORUM TEL +7 (928) 768 32 29</p>
                     <div class="contacts__text-links">
@@ -361,16 +409,16 @@
                         <a href="" target="_blank"><img src="./icons/instagram.svg" alt="instagram"></a>  
                     </div> 
                 </div>
-                <div class="contacts__map">
+                <div class="contacts__map mobile-hidden">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.8546680755978!2d39.72274175203026!3d47.244686426324925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2sru!4v1628276464607!5m2!1sru!2sru" width="925" height="465" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-            <div class="contacts-overlay"></div>
+            <div class="contacts-overlay mobile-hidden"></div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
+    <footer class="mobile-hidden">
+        <div class="container footer-content">
             <div class="footer-title">
                 IC "REPAIR DESIGN PROJECT"
             </div>
