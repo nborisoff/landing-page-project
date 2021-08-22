@@ -657,6 +657,12 @@ header, .examples, footer {
     color: #181818;
 }
 
+@media screen and (max-width: 1300px) {
+    .online__feedback-checkbox+label {
+        color: #FFFFFF;
+    }
+}
+
 .online__feedback-checkbox+label::before {
     content: '';
     display: inline-block;
