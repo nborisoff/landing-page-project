@@ -2,8 +2,11 @@ window.addEventListener('DOMContentLoaded', function() {
     function projectsSlider() {
         let index = 1,
             slide = document.querySelector(".examples__img img"),
+            slideMobile = document.querySelector(".slider-mobile img"),
             prev = document.querySelector('.prev'),
             next = document.querySelector('.next'),
+            prevMobile = document.querySelector('.prev-mobile'),
+            nextMobile = document.querySelector('.next-mobile'),
             dots = document.getElementsByClassName("examples__slider-dot"),
             names = document.getElementsByClassName("examples-nav__item"),
             city = document.querySelector(".examples__details-city"),
@@ -43,27 +46,33 @@ window.addEventListener('DOMContentLoaded', function() {
                 index = info.length;
             }
             slide.src = info[index - 1].path;
+            slideMobile.src = info[index - 1].path;
 
             for (let i = 0; i < dots.length; i++) {
                 dots[i].classList.remove("active-dot");
                 names[i].classList.remove("active-project");
             }
+
             dots[index - 1].classList.add("active-dot");
             names[index - 1].classList.add("active-project");
-
             city.innerHTML = info[index-1].city;
             area.innerHTML = info[index-1].area;
             time.innerHTML = info[index-1].time;
             cost.innerHTML = info[index-1].cost;
         };
-    
-        prev.addEventListener('click', function() {
-            moveSlide(index += -1);
-        });
-    
-        next.addEventListener('click', function() {
+
+        function prevSlide() {
+            moveSlide(index -= 1);
+        }
+
+        function nextSlide() {
             moveSlide(index += 1);
-        });
+        }
+    
+        prev.addEventListener('click', prevSlide);
+        next.addEventListener('click', nextSlide);
+        prevMobile.addEventListener('click', prevSlide);
+        nextMobile.addEventListener('click', nextSlide);
 
         for (let i = 0; i < dots.length; i++) {
             dots[i].addEventListener("click", function() {
