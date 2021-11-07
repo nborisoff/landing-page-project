@@ -78,6 +78,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Yeseva One";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Nunito Sans;
     font-size: 11px;
@@ -307,6 +311,15 @@ header, .examples, footer {
     line-height: 37px;
     letter-spacing: -0.07em;
     color: #E3B873;
+}
+
+.examples__title:after {
+    position: absolute;
+    content: '';
+    width: 92px;
+    height: 2px;
+    margin: 18px 0 0 38px;
+    background-color: #E3B873;
 }
 
 @media screen and (max-width: 1300px) {
