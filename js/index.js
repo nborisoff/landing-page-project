@@ -84,6 +84,5 @@ window.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
-
     projectsSlider();
 });

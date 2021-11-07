@@ -326,6 +326,11 @@ header, .examples, footer {
     .examples__title {
         text-align: center;
     }
+
+    .examples__title:after {
+        content: '';
+        width: 0;
+    }
 }
 
 .examples__description {
