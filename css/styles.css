@@ -284,7 +284,7 @@ header, .examples, footer {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.examples-nav__item a:hover {
+.examples-nav__item a:hover, .active-project a {
     color: #E3B873;
     border-bottom: 1px solid #e3b873;
     padding-bottom: 6px;
@@ -402,15 +402,20 @@ header, .examples, footer {
     margin-top: 37px;
 }
 
+.prev, .next {
+    cursor: pointer;
+}
+
 .examples__slider-dot {
     display: inline-block;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 }
 
-.examples__slider-dot:active {
+.examples__slider-dot:active, .active-dot {
     background-color: #FFFFFF;
 }
 
@@ -1406,4 +1411,32 @@ header, .examples, footer {
     .desktop-hidden {
         display: none !important;
     }
+}
+
+
+@keyframes slideInLeft {
+    from {
+        transform:translate3d(-100%,0,0);
+        visibility:visible
+    }
+    to {
+        transform:translate3d(0,0,0)
+    }
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+}
+
+@keyframes slideInRight{
+    from {
+        transform:translate3d(100%,0,0);
+        visibility:visible
+    }
+    to {
+        transform:translate3d(0,0,0)
+    }
+}
+.slideInRight {
+    animation-name:slideInRight
 }

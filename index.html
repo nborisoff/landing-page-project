@@ -16,7 +16,7 @@
             <nav class="mobile-hidden">
                 <ul class="header-nav">
                     <li class="header-nav__item"><a href="#">HOME</a></li>
-                    <li class="header-nav__item"><a href="#">PROJECTS</a></li>
+                    <li class="header-nav__item"><a href="#projects">PROJECTS</a></li>
                     <li class="header-nav__item"><a href="#">MEASUREMENT</a></li>
                     <li class="header-nav__item"><a href="#">TEAM</a></li>
                     <li class="header-nav__item"><a href="#">REVIEWS</a></li>
@@ -46,13 +46,13 @@
 			<div class="greeting-overlay"></div>
 		</section>
 
-        <section class="examples">
+        <section id="projects" class="examples">
             <div class="container examples__container">
                 <nav class="mobile-hidden">
                     <ul class="examples-nav">
-                        <li class="examples-nav__item"><a href="#">ROSTOV-ON-DON, ADMIRAL</a></li>
-                        <li class="examples-nav__item"><a href="#">SOCHI THIEVES</a></li>
-                        <li class="examples-nav__item"><a href="#">ROSTOV-ON-DON PATRIOTIC</a></li>
+                        <li class="examples-nav__item active-project"><a href="#projects">ROSTOV-ON-DON, ADMIRAL</a></li>
+                        <li class="examples-nav__item"><a href="#projects">SOCHI THIEVES</a></li>
+                        <li class="examples-nav__item"><a href="#projects">ROSTOV-ON-DON PATRIOTIC</a></li>
                     </ul>
                 </nav>
                 <div class="examples__info">
@@ -87,15 +87,15 @@
                                 </div>
                             </div>
                             <div class="examples__slider mobile-hidden">
-                                <img src="./icons/left-arrow.svg" alt="left-arrow">
+                                <img class="prev" src="./icons/left-arrow.svg" alt="left-arrow">
+                                <span class="examples__slider-dot active-dot"></span>
                                 <span class="examples__slider-dot"></span>
                                 <span class="examples__slider-dot"></span>
-                                <span class="examples__slider-dot"></span>
-                                <img src="./icons/right-arrow.svg" alt="right-arrow">
+                                <img class="next" src="./icons/right-arrow.svg" alt="right-arrow">
                             </div>
                         </div>
                         <div class="examples__img mobile-hidden">
-                            <img src="./img/example.jpg" alt="example">
+                            <img src="./img/example1.jpg" alt="example">
                         </div>
                 </div>
             </div>
@@ -436,5 +436,7 @@
             <button class="footer-content__btn">REQUEST A CALL</button>
         </div>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
